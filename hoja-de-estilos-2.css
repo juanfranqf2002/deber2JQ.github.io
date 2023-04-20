@@ -1,0 +1,391 @@
+* {
+  margin: 0px;
+  padding: 10px;
+}
+
+body {
+  background: lightblue; /*Cambio de color del fondo*/
+  font-family: 'Times New Roman', Times, serif; /*Cambiamos fuente de toda la pagina */
+}
+h3 {
+  text-align: left;
+  color: white;
+}
+#container {
+  /*Le damos un ancho*/
+  /*width: 70%;*/
+  width: 1600px; /*Le damos un tamaño al contenedor*/
+  margin: 0px auto; /*Le asignamos un margen al gontenedor de la pagia web*/
+  border: 7px soli rgb(142, 231, 142); /*Le asignamos un borde al contenedor de la pagina web*/
+}
+
+header {
+  height: 150px; /*Establecemos la altura del elemento en la pagina web*/
+  width: 100%; /*Asignamos un tamaño a la cabecera de la pagina web*/
+  margin: 4px; /*Le asignamos margenes a la cabecera de la pagina web*/
+
+  text-align: center; /*Hacemos que el texto de la cabecera se encuentre centrado*/
+  line-height: 100px; /*Asignamos la altura de linea*/
+  color: grey(0, 0, 0, 0.637); /*Le damos a la letra un color blanco*/
+  background: rgb(
+    236,
+    187,
+    217
+  ); /*cambiamos el color del fondo de la cabecera*/
+}
+/**Barra de navegacion*/
+
+nav {
+  background: black; /*Le asignamos un color a la barra de navegacion*/
+  margin-top: 20px;
+  color: white; /*El texto que se encuentre en la nav sea de color blanco*/
+  height: 90px; /*Establecemos una altura al elemento*/
+}
+h2 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+nav ul li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 0 10px;
+  color: white;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+}
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+  background-color: lightblue;
+}
+nav ul li:hover > ul {
+  display: inherit;
+}
+nav ul ul li {
+  width: 80%;
+  float: none;
+  position: relative;
+}
+nav ul ul ul li {
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+
+.clearfix {
+  clear: both; /*Cuando floten los elementos mantengan su sitio*/
+}
+
+/*Para el contenido*/
+#content {
+  float: left;
+  text-align: left;
+  width: calc(70% - 70px);
+  min-height: 500px; /*le daremos una altura minima a este elemento*/
+  background: black;
+  padding: 50px;
+}
+
+#content article h1 {
+  text-align: justify;
+  color: white;
+}
+#content article p {
+  margin-top: 10px;
+  text-align: justify;
+  color: white; /*letra*/
+}
+/*Imagenes en css*/
+.slider {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  padding-top: 50px;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide:nth-child(1) {
+  background-image: url('imagen1.jpg');
+  animation: slide 15s infinite;
+}
+
+.slide:nth-child(2) {
+  background-image: url('imagen2.jpg');
+  animation: slide 15s infinite;
+  animation-delay: 3s;
+}
+
+.slide:nth-child(3) {
+  background-image: url('imagen3.jpg');
+  animation: slide 15s infinite;
+  animation-delay: 6s;
+}
+
+.slide:nth-child(4) {
+  background-image: url('imagen4.jpg');
+  animation: slide 12s infinite;
+  animation-delay: 9s;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*Formato de Imagenes*/
+#cont1 {
+  border-radius: 15px;
+  border: 1px solid white;
+}
+/*Animacion de*/
+.titulo {
+  font-size: 35px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  animation: crecer 2s ease-in-out infinite;
+}
+
+@keyframes crecer {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*Formato con aside*/
+aside {
+  float: left;
+  color: white;
+  width: calc(
+    20% - 20px
+  ); /*Funcion calc para ajustar ya que quito los 20px de cada lado*/
+  min-height: 1940px; /*altura minima para el aside*/
+  background: #06c6f7;
+  padding-left: 20px; /*margenes por izquierda*/
+  padding-top: 10px; /*Marjenes por derecha*/
+}
+/*Estilo al footer*/
+footer {
+  background: #2471a3;
+  color: black;
+  text-align: center;
+  height: 50px;
+  line-height: 50px; /*centre verticalemnte la linea de texto*/
+  border-radius: 5px;
+}
+#fooFormulario {
+  color: black;
+  background-color: darkorange;
+  text-align: left;
+  height: 300px;
+}
+
+.buttonE {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2e86c1;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 5px 0px 0px #2874a6;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.buttonE:hover {
+  background-color: #c20f0f;
+  box-shadow: 0px 3px 0px 0px #c26e0d;
+  transform: translateY(2px);
+}
+/*Imagen */
+.contIMG {
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 600px; /* ancho del contenedor */
+  height: 600px; /* alto del contenedor */
+  overflow: hidden; /* ocultar lo que sobresale del contenedor */
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.contIMG img {
+  width: 100%; /* ancho de la imagen */
+  height: 100%; /* alto de la imagen */
+  transition: transform 0.5s ease; /* transición suave */
+}
+
+.contIMG img:hover {
+  transform: scale(1.2); /* zoom al 120% al pasar el ratón por encima */
+}
+
+/*Archivo de ejemplos CSS*/
+/*Ejemplo 1*/
+.rotate-on-hover img {
+  transition: transform 0.5s;
+}
+
+.rotate-on-hover:hover img {
+  transform: rotate(360deg);
+}
+
+/**Ejemplo 2*/
+.scroll-text {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.scroll-text p {
+  animation: scroll 5s linear infinite;
+  white-space: nowrap;
+  margin: 0;
+  font-size: 20px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/*Ejemplo 3*/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  position: relative;
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.image:hover img {
+  transform: scale(1.2);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/*Ejemplo 4*/
+.gallery1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image1 {
+  position: relative;
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.image1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.image1:hover {
+  transform: scale(1.1);
+}
+
+.image1:hover .overlay {
+  opacity: 1;
+}

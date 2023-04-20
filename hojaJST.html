@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>JavaScript</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="hoja-de-estilos-1.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1 class="titulo">JavaScript</h1>
+      </header>
+      <!--Barra de Navegacion-->
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a href="#">Estándares Web</a>
+            <ul>
+              <li><a href="hojaHTML.html">HTML</a></li>
+              <li><a href="hojaCSS.html">CSS</a></li>
+              <li><a href="hojaJST.html">JavaScript</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Ejemplos</a>
+            <ul>
+              <li><a href="ejemploHTML.html">Ejemplo HTML</a></li>
+              <li><a href="ejemploCSS.html">Ejemplo CSS</a></li>
+              <li><a href="ejemploJS.html">Ejemplo JavaScript</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Acerca De</a></li>
+          <li><a href="#">Contactenos</a></li>
+        </ul>
+      </nav>
+
+      <!--Creamos una clase clearfix para que cuando se flote los elementos estos mantengan su sitio-->
+      <div class="clearfix"></div>
+
+      <section id="content">
+        <article>
+          <h2>Estructura de una página web</h2>
+          <h3>¿Cómo es?</h3>
+          <p>
+            En JavaScript, la estructura se refiere a cómo se organizan y se
+            dividen las diferentes partes del código fuente en un archivo
+            JavaScript. A continuación, se muestra la estructura básica de un
+            archivo JavaScript:
+          </p>
+          <p>
+            Declaraciones de variables: es común comenzar un archivo JavaScript
+            con la declaración de variables que se utilizarán en el código. Las
+            variables pueden declararse usando las palabras clave "var", "let" o
+            "const".
+          </p>
+          <p>
+            Funciones: las funciones en JavaScript se definen usando la palabra
+            clave "function". Las funciones pueden tener parámetros y devolver
+            valores.
+          </p>
+          <p>
+            Eventos: JavaScript se utiliza a menudo para agregar interactividad
+            a una página web. Los eventos son acciones que ocurren en la página,
+            como hacer clic en un botón o mover el mouse, y se manejan
+            utilizando funciones de JavaScript.
+          </p>
+          <p>
+            Métodos y propiedades: los objetos en JavaScript tienen métodos y
+            propiedades. Los métodos son funciones que se aplican a un objeto,
+            mientras que las propiedades son valores que se almacenan en un
+            objeto.
+          </p>
+          <p>
+            Condicionales y bucles: JavaScript proporciona estructuras de
+            control de flujo, como condicionales ("if", "else") y bucles ("for",
+            "while"), para ejecutar ciertas partes del código en función de
+            ciertas condiciones.
+          </p>
+          <p>
+            Manipulación del DOM: El DOM (Document Object Model) es la
+            estructura de objetos que representa una página web en el navegador.
+            JavaScript se utiliza a menudo para manipular el DOM, agregando o
+            eliminando elementos y cambiando el contenido de la página.
+          </p>
+          <div class="contIMG">
+            <img
+              src="https://francescricart.com/wp-content/uploads/2018/01/introduccion-programacion-javascript-2.jpg"
+              alt="img"
+            />
+          </div>
+        </article>
+        <article>
+          <br />
+          <h2>Funciones de JavaScript</h2>
+          <h3>¿Cuales son?</h3>
+          <p>
+            JavaScript se puede ejecutar en HTML de varias formas, la forma más
+            común son los eventos del DOM (Document Object Model)
+          </p>
+          <p>Algunos ejemplos:</p>
+          <p>
+            onload: Se ejecuta cuando la página web completa, incluidos sus
+            recursos, se ha cargado en el navegador.
+          </p>
+          <p>onclick: Se ejecuta cuando un elemento se hace click.</p>
+          <p>
+            onmouseover: Se ejecuta cuando el puntero del ratón se mueve sobre
+            un elemento.
+          </p>
+          <p>onsubmit: Se ejecuta cuando se envía un formulario.</p>
+          <p>onkeydown: Se ejecuta cuando se presiona una tecla del teclado.</p>
+          <p>
+            onresize: Se ejecuta cuando la ventana del navegador se
+            redimensiona.
+          </p>
+          <div class="contIMG">
+            <img
+              src="https://static.platzi.com/media/user_upload/JavaScript%20%281%29-997fdbe2-5817-4e30-a6b4-71f2bf6c53e2.jpg"
+              alt="img"
+            />
+          </div>
+          <br />
+          <h2>Tambien tenemos</h2>
+          <p>
+            String.split():Divide una cadena en un arreglo de subcadenas de la
+            cadena original a partir de un carácter separadorDivide una cadena
+            en un arreglo de subcadenas de la cadena original a partir de un
+            carácter separador
+          </p>
+          <p>
+            String.substring(): Extrae caracteres desde un índice A hasta un
+            índice B sin incluirl
+          </p>
+          <p>
+            String.trim():Elimina espacios en blanco al inicio y al final de una
+            cadena
+          </p>
+          <p>
+            Array.map(): Crea un arreglo nuevo con los resultados de la función
+            enviada como parámetro
+          </p>
+          <p>
+            console.log():Escribe un mensaje en la consola web o en el
+            intérprete de JavaScript
+          </p>
+          <p>
+            Object.toString(): Todos los objetos en JavaScript tienen este
+            método y se usa para representarlos en forma de cadena de texto
+          </p>
+          <div class="contIMG">
+            <img
+              src="https://weasfrikis.files.wordpress.com/2021/04/snap01969.jpg"
+              alt=""
+            />
+          </div>
+        </article>
+      </section>
+      <aside>
+        <h2>Estilos de Pagina</h2>
+        <button
+          onclick="cambiarEstilo('hoja-de-estilos-1.css')"
+          class="buttonE"
+        >
+          Estilo 1
+        </button>
+        <button
+          onclick="cambiarEstilo('hoja-de-estilos-2.css')"
+          class="buttonE"
+        >
+          Estilo 2
+        </button>
+      </aside>
+      <div class="clearfix"></div>
+      <footer><p>Juan Quizhpi WEB &COPY; 2023</p></footer>
+      <div class="clearfix"></div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+
+  <!--Usamos esta parte para hacer el cambio entre ojas de estilo-->
+  <script>
+    function cambiarEstilo(nombreEstilo) {
+      var hojaDeEstilos = document.getElementsByTagName('link')[0];
+      hojaDeEstilos.href = nombreEstilo;
+    }
+  </script>
+</html>
